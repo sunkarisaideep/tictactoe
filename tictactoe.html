@@ -1,0 +1,56 @@
+<html>
+    <head>
+    <style>
+        body
+        {
+            margin-top: 12%;
+            margin-left: 0%;
+            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+              }
+        
+        table
+        {
+            border:3px solid;
+        }
+        input
+        {
+            width:80px;
+            height:80px
+        }
+        input:hover
+        {
+            background-color: aqua;
+            transform: scale(1.2);
+        }
+    </style>
+    <script src="./tictactoe.js"></script>
+    </head>
+    <body align="center">
+        <h3> TIC TAK TOE</h3>
+        <table align="center">
+            <tr>
+                <td><input type="text" id="one" value=" "  onclick="play1()"readonly ></td>
+                <td><input type="text" id="two" value=" "  onclick="play2()"readonly ></td>
+                <td><input type="text" id="three" value=" "onclick="play3()"readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="four" value=" "onclick="play4()"readonly></td>
+                <td><input type="text" id="five" value=" "onclick="play5()"readonly></td>
+                <td><input type="text" id="six"value=" " onclick="play6()"readonly></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="seven" value=" "onclick="play7()"readonly></td>
+                <td><input type="text" id="eight"value=" " onclick="play8()"readonly></td>
+                <td><input type="text" id="nine" value=" "onclick="play9()"readonly></td>
+            </tr>
+            
+        </table>
+        <br/>
+        Enter Player X : <input type="text" id="playerx" style=" width:70px;
+        height:20px"><br/><br/>
+        Enter Player O : <input type="text" id="playery" style=" width:70px;
+        height:20px">
+</html>
